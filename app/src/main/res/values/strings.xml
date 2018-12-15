@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TaxCalculator</string>
+    <string name="total_number">總金額</string>
+    <string name="tax">稅金</string>
+    <string name="tax_excluded">除稅金額</string>
+    <string name="calculate">計算</string>
 </resources>
