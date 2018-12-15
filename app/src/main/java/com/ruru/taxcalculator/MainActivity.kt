@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     internal lateinit var tax:TextView
     internal lateinit var taxExcluedText:TextView
     internal lateinit var displayNumber:TextView
+    internal lateinit var chineseNumberText:TextView
+    internal lateinit var chineseNumberList:Array<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +34,30 @@ class MainActivity : AppCompatActivity() {
         tax = findViewById<TextView>(R.id.taxValue)
         taxExcluedText = findViewById<TextView>(R.id.taxExcludedValue)
         displayNumber = findViewById<TextView>(R.id.inputValue)
+        chineseNumberText = findViewById<TextView>(R.id.chineseNumberValue)
+        chineseNumberList = resources.getStringArray(R.array.number_list)
+
+        computeButton.setOnClickListener {
+                view-> calculateTax()
+        }
     }
 
+    fun calculateTax() {
+        var value = displayNumber.text.toString().toFloat()
+        if (value != 0.toFloat()) {
+            var taxExcluded = (value / 1.05).roundToInt()
+            var chineseNumberTmp = arrayListOf<String>()
+            tax.text = (value - taxExcluded).roundToInt().toString()
+            taxExcluedText.text = taxExcluded.toString()
+
+            for (n in value.toInt().toString().toCharArray()) {
+                var tmp = chineseNumberList[n.toString().toInt()]
+                chineseNumberTmp.add(tmp)
+            }
+            chineseNumberText.text = chineseNumberTmp.joinToString("")
+        }
+
+    }
 
     fun showNum (view: View) {
         var numberButton = findViewById<Button>(view.id).text.toString()
