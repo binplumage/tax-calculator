@@ -1,22 +1,11 @@
 <resources>
     <string name="app_name">TaxCalculator</string>
     <string name="calculate">計算</string>
-    <string name="total_value">輸入總金額</string>
+    <string name="input_value">輸入總金額</string>
     <string name="tax">稅金</string>
     <string name="tax_excluded">除稅金額</string>
     <string name="clear">清除</string>
     <string name="chinese_number">大寫國字</string>
-    <string name="number0">零</string>
-    <string name="number1">壹</string>
-    <string name="number2">貳</string>
-    <string name="number3">參</string>
-    <string name="number4">肆</string>
-    <string name="number5">伍</string>
-    <string name="number6">陸</string>
-    <string name="number7">柒</string>
-    <string name="number8">捌</string>
-    <string name="number9">玖</string>
-
     <string-array name="number_list">
         <item>零</item>
         <item>壹</item>

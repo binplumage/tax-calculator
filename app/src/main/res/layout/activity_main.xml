@@ -14,16 +14,16 @@
             android:orientation="vertical">
 
         <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/inputValueTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
                 android:textSize="25dp"
-                android:text="@string/total_value"/>
+                android:text="@string/input_value"/>
 
         <TextView
-                android:id="@+id/input_value"
+                android:id="@+id/inputValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -37,7 +37,7 @@
                 android:orientation="horizontal">
 
             <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/taxTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -47,7 +47,7 @@
 
 
             <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/taxValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -62,7 +62,7 @@
                 android:orientation="horizontal">
 
             <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/taxExcludedTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -71,7 +71,7 @@
                     android:text="@string/tax_excluded"/>
 
             <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/taxExcludedValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -101,11 +101,11 @@
                         android:text="9"
                         android:onClick="showNum"/>
                 <Button
-                        android:id="@+id/clear"
+                        android:id="@+id/clearButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/clear"
-                        android:onClick="clear"/>
+                        android:onClick="clearNumber"/>
             </TableRow>
 
             <TableRow>
@@ -162,7 +162,7 @@
             </TableRow>
         </TableLayout>
         <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/chineseNumberTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
