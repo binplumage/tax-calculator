@@ -13,22 +13,30 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-        <TextView
-                android:id="@+id/inputValueTitle"
-                android:layout_width="wrap_content"
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:textSize="25dp"
-                android:text="@string/input_value"/>
+                android:layout_width="match_parent"
+                android:orientation="vertical">
 
-        <TextView
-                android:id="@+id/inputValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:textSize="25dp"/>
+            <TextView
+                    android:id="@+id/inputValueTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    android:text="@string/input_value"/>
+
+            <TextView
+                    android:id="@+id/inputValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"/>
+
+        </LinearLayout>
 
         <LinearLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,23 +49,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
-                    android:textSize="25dp"
+                    android:textSize="30dp"
                     android:text="@string/tax"/>
 
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
 
             <TextView
                     android:id="@+id/taxValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:textSize="25dp"/>
+                    android:layout_marginRight="40dp"
+                    android:textSize="30dp"/>
 
         </LinearLayout>
 
         <LinearLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -67,21 +77,30 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
-                    android:textSize="25dp"
+                    android:textSize="30dp"
                     android:text="@string/tax_excluded"/>
+
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
 
             <TextView
                     android:id="@+id/taxExcludedValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:textSize="25dp"/>
+                    android:layout_marginRight="40dp"
+                    android:textSize="30dp"/>
+
         </LinearLayout>
+
         <TableLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp">
             <TableRow>
+
                 <Button
                         android:id="@+id/seven"
                         android:layout_width="wrap_content"
@@ -161,14 +180,32 @@
                         android:onClick="showNum"/>
             </TableRow>
         </TableLayout>
-        <TextView
-                android:id="@+id/chineseNumberTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="21dp"
-                android:textSize="25dp"
-                android:text="@string/chinese_number"/>
+
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/chineseNumberTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30dp"
+                    android:text="@string/chinese_number"/>
+
+
+            <TextView
+                    android:id="@+id/chineseNumberValue"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30dp"/>
+
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
