@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TaxCalculator</string>
+    <string name="app_name">開發票計算機</string>
     <string name="calculate">計算</string>
     <string name="input_value">輸入總金額</string>
     <string name="tax">稅金</string>

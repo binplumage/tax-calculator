@@ -74,5 +74,6 @@ class MainActivity : AppCompatActivity() {
         displayNumber.text = "0"
         tax.text = "0"
         taxExcluedText.text = "0"
+        chineseNumberText.text = ""
     }
 }
