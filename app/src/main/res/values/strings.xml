@@ -6,6 +6,7 @@
     <string name="tax_excluded">除稅金額</string>
     <string name="clear">清除</string>
     <string name="chinese_number">大寫國字</string>
+    <string name="number_too_big">數字太大，最多計算九位數</string>
     <string-array name="number_list">
         <item>零</item>
         <item>壹</item>

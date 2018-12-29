@@ -62,11 +62,14 @@ class MainActivity : AppCompatActivity() {
     fun showNum (view: View) {
         var numberButton = findViewById<Button>(view.id).text.toString()
         var nowTotalNumber = displayNumber.text.toString()
-        if (nowTotalNumber == '0'.toString()) {
-            displayNumber.text = numberButton
-        }
-        else {
-            displayNumber.text = nowTotalNumber + numberButton
+        if(nowTotalNumber.length > 8) {
+            Toast.makeText(this, R.string.number_too_big, Toast.LENGTH_LONG).show()
+        } else {
+            if (nowTotalNumber == '0'.toString()) {
+                displayNumber.text = numberButton
+            } else {
+                displayNumber.text = nowTotalNumber + numberButton
+            }
         }
     }
 
